@@ -85,7 +85,15 @@ public class CustomizationManager : MonoBehaviour
         if(indexHat == hatsPrefabs.Length)
             indexHat = -1;
 
-        PlayerPrefs.SetInt("indexHat", indexHat);
+        if(indexHat == -1)
+        {
+            PlayerPrefs.DeleteKey("indexHat");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("indexHat", indexHat);
+        }
+        
     }
 
     public void ChangePlayerColor()

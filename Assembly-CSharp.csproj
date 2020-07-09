@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{08A8CE19-A125-548C-8287-39793CC2796D}</ProjectGuid>
+    <ProjectGuid>{45A4A5C3-0ABA-D653-7CD7-1892EBD8309C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -274,25 +274,25 @@
       <HintPath>D:/Unity/Unity Editors/2019.4.2f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Assets/Karting/ML_Agents/Plugins/System.IO.Abstractions.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Assets/Karting/ML_Agents/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Assets/Karting/ML_Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Assets/Karting/ML_Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Assets/Karting/ML_Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Assets/Karting/ML_Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Assets/Karting/ML_Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Assets/Karting/ML_Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/PackageCache/com.unity.barracuda@0.5.0-preview/Barracuda/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/PackageCache/com.unity.barracuda@0.5.0-preview/Barracuda/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/PackageCache/com.unity.connect.share@1.2.0-preview.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/PackageCache/com.unity.connect.share@1.2.0-preview.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/Unity/Unity Editors/2019.4.2f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -655,125 +655,125 @@
       <HintPath>D:/Unity/Unity Editors/2019.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="MacBLAS">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/MacBLAS.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/MacBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Connect.Share.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Barracuda-editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Barracuda-editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Barracuda-editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Barracuda">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Barracuda.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Barracuda.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="iOSBLAS">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/iOSBLAS.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/iOSBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="BurstBLAS">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/BurstBLAS.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/BurstBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.InteractiveTutorialsFramework">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Unity Projects/Geta Game Studios - Prueba Tecnica/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Juan Manuel/Documents/GitHub/PruebaTecnicaGGS/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="KartGame.csproj">
-      <Project>{55E7308D-BE3B-DCC7-568B-87D2516CE8B1}</Project>
+      <Project>{B95FD14D-D7A3-BAE6-5FD0-1C7EFB434A20}</Project>
       <Name>KartGame</Name>
     </ProjectReference>
     <ProjectReference Include="MLAgentsToolKit.csproj">
-      <Project>{59DE71CE-2212-F08F-97FC-C38DC3E25EB1}</Project>
+      <Project>{D6335B35-985A-D964-7A6C-2FF6EEF22033}</Project>
       <Name>MLAgentsToolKit</Name>
     </ProjectReference>
     <ProjectReference Include="MLAgentsToolKit.Editor.csproj">
-      <Project>{7C53C49E-C9F5-C85E-2A92-AD35F66D4CF8}</Project>
+      <Project>{3DAD4FAF-0091-7AD8-CFD2-3889094E0A97}</Project>
       <Name>MLAgentsToolKit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="KartGame.AI.csproj">
-      <Project>{8CF54E24-60C5-0B35-E31F-55DF407D9C69}</Project>
+      <Project>{4588952E-F7A9-2EC6-C00A-F2720A4A6F6E}</Project>
       <Name>KartGame.AI</Name>
     </ProjectReference>
     <ProjectReference Include="KartGame.Editor.csproj">
-      <Project>{31F0E95E-67BC-E658-2499-0A026605FC8D}</Project>
+      <Project>{8EBDFBC0-CCE7-2DB7-1848-4FEBB1F80B41}</Project>
       <Name>KartGame.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="KartGame.AI.Editor.csproj">
-      <Project>{FAE28DEA-1169-536D-ABF2-DA5F2CF68775}</Project>
+      <Project>{341457D3-E197-7A29-78A6-3AB5B016604A}</Project>
       <Name>KartGame.AI.Editor</Name>
     </ProjectReference>
   </ItemGroup>
