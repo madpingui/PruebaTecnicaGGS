@@ -60,8 +60,7 @@ public class ArcadeKartPowerup : MonoBehaviour {
                 onPowerupActivated.Invoke();
                 isCoolingDown = true;
 
-                //Activate PowerUp Effects
-
+                //Activate PowerUps
                 if (jumpPowerUp)
                 {
                     kart.JumpPowerup();

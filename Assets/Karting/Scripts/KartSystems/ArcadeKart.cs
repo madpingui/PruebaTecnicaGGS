@@ -120,11 +120,12 @@ namespace KartGame.KartSystems
 
         public Transform SuspensionBody;
 
+        //Resources to change the player
         [Header("Vehicle Customization")]
         [Tooltip("Components that are gonna be modified,")]
-        public GameObject[] hatsPrefabs;
-        public GameObject[] wheelsPrefabs;
-        public GameObject trail;
+        public GameObject[] HatsPrefabs;
+        public GameObject[] WheelsPrefabs;
+        public GameObject TrailVFX;
 
         // saved transforms of where the suspension's neutral positions are
         Vector3 suspensionNeutralPos;
@@ -149,29 +150,28 @@ namespace KartGame.KartSystems
             suspensionNeutralRot = SuspensionBody.transform.localRotation;
 
 
-            //Ajust the player mods based on saved preferences
-
-            foreach (var item in hatsPrefabs)
+            //Ajust the player modifications based on saved preferences
+            foreach (var item in HatsPrefabs)
             {
                 item.SetActive(false);
             }
 
             if (PlayerPrefs.HasKey("indexHat") && tag == "Player")
             {
-                hatsPrefabs[PlayerPrefs.GetInt("indexHat") - 1].SetActive(true);
+                HatsPrefabs[PlayerPrefs.GetInt("indexHat") - 1].SetActive(true);
             }
 
             if (PlayerPrefs.HasKey("changeWheels") && tag == "Player")
             {
                 if (PlayerPrefs.GetInt("changeWheels") == 0)
                 {
-                    wheelsPrefabs[0].SetActive(true);
-                    wheelsPrefabs[1].SetActive(false);
+                    WheelsPrefabs[0].SetActive(true);
+                    WheelsPrefabs[1].SetActive(false);
                 }
                 else
                 {
-                    wheelsPrefabs[0].SetActive(false);
-                    wheelsPrefabs[1].SetActive(true);
+                    WheelsPrefabs[0].SetActive(false);
+                    WheelsPrefabs[1].SetActive(true);
                 }
             }
 
@@ -525,29 +525,31 @@ namespace KartGame.KartSystems
             activePowerupList.Add(statPowerup); 
         }
 
-        //PowerUp Custom Effects (doesnt affect velocity)
+        //Powerup: jump
         public void JumpPowerup()
         {
             Rigidbody.AddForce(Vector3.up * 7000);
         }
 
+        //Powerup: push player back
         public void AntiPowerup()
         {
             Rigidbody.velocity = Vector3.zero;
             Rigidbody.AddRelativeForce(new Vector3(0, 1, -1) * 3000);
         }
 
+        //Powerup vfx on
         public void SpeedUp()
         {
-            trail.SetActive(true);
+            TrailVFX.SetActive(true);
             Invoke("ResetSpeedup", 1);
         }
 
+        //Powerup vfx off
         public void ResetSpeedup()
         {
-            trail.SetActive(false);
+            TrailVFX.SetActive(false);
         }
-        //
 
         public void Reset()
         {
