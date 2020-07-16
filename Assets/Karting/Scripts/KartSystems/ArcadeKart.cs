@@ -151,11 +151,6 @@ namespace KartGame.KartSystems
 
 
             //Ajust the player modifications based on saved preferences
-            foreach (var item in HatsPrefabs)
-            {
-                item.SetActive(false);
-            }
-
             if (PlayerPrefs.HasKey("indexHat") && tag == "Player")
             {
                 HatsPrefabs[PlayerPrefs.GetInt("indexHat") - 1].SetActive(true);

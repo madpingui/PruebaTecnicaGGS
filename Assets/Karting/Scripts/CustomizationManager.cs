@@ -71,21 +71,24 @@ public class CustomizationManager : MonoBehaviour
     //Change hat by UI button
     public void ChangeHat()
     {
-        foreach (var item in HatsPrefabs)
-        {
-            item.SetActive(false);
-        }
-
         CurrentIndexHat++;
 
         if (CurrentIndexHat == 0)
+        {
+            HatsPrefabs[HatsPrefabs.Length - 1].SetActive(false);
             return;
+        }
 
         HatsPrefabs[CurrentIndexHat - 1].SetActive(true);
+
+        if(CurrentIndexHat - 2 >= 0)
+            HatsPrefabs[CurrentIndexHat - 2].SetActive(false);
 
         if(CurrentIndexHat == HatsPrefabs.Length)
             CurrentIndexHat = -1;
 
+
+        //Save or delete the hat in preferences
         if(CurrentIndexHat == -1)
         {
             PlayerPrefs.DeleteKey("indexHat");
