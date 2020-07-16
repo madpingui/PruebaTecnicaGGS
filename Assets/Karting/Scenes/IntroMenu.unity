@@ -279,35 +279,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41d22cbe0fd71149bb92e6797e44743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hatsPrefabs:
+  HatsPrefabs:
   - {fileID: 1228814530}
   - {fileID: 956844554}
   - {fileID: 950124021}
-  wheelsPrefabs:
+  WheelsPrefabs:
   - {fileID: 2134997978}
   - {fileID: 7899344915035145055}
-  playerMat: {fileID: 2100000, guid: 41245d44b7e4e4a9ebe8a3e324e02795, type: 2}
-  playerColorsOptions:
-  - {r: 0.26392388, g: 1, b: 0, a: 0}
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0.4509804, g: 0.8980392, b: 0.8980392, a: 0}
-  - {r: 0.97204924, g: 0, b: 1, a: 0}
-  carMat: {fileID: 2100000, guid: 09621e790441a46dd96384071c5c8a73, type: 2}
-  carColorsOptions:
+  PlayerMaterial: {fileID: 2100000, guid: 41245d44b7e4e4a9ebe8a3e324e02795, type: 2}
+  PlayerColorsOptions:
+  - {r: 0, g: 1, b: 0, a: 0}
+  - {r: 0, g: 0, b: 1, a: 0}
+  CarMaterial: {fileID: 2100000, guid: 09621e790441a46dd96384071c5c8a73, type: 2}
+  CarColorsOptions:
   - {r: 1, g: 1, b: 1, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
   - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0, g: 1, b: 0.2391901, a: 0}
-  wheelsMat: {fileID: 2100000, guid: 01ac3e64bdb3249e5acb38002cca9035, type: 2}
-  wheelsColorsOptions:
+  WheelsMaterial: {fileID: 2100000, guid: 01ac3e64bdb3249e5acb38002cca9035, type: 2}
+  WheelsColorsOptions:
   - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0}
-  - {r: 0.3160377, g: 0.82979137, b: 1, a: 0}
-  - {r: 0.735849, g: 0.44775718, b: 0.7269706, a: 0}
-  indexHat: 0
-  indexPlayer: 0
-  indexCar: 0
-  indexWheels: 0
+  - {r: 0, g: 0.9806142, b: 1, a: 0}
+  CurrentIndexHat: 0
+  CurrentIndexPlayer: 0
+  CurrentIndexCar: 0
+  CurrentIndexWheels: 0
 --- !u!4 &98934230
 Transform:
   m_ObjectHideFlags: 0
