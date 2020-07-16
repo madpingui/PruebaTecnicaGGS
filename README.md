@@ -1,20 +1,19 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This project is based on:
+- [Karting Microgame](https://learn.unity.com/project/karting-template)
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+TODO: Guide users through getting your code up and running on their own system:
+1.	Download Unity 2019.4.2f1
+2.	Clone Repository
+3.	Update to the last version of postprocessing
+4.	PRESS PLAY!
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# Explanation
+The project is a modification of the base project, the next modifications where made:
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Added an IA that is able to compete against the user.
+1.	A custom interface where you can change the appareance of your car and player.
+2.	Custom scene for level designers.
+3.	Custom powerups.
+4.	Skidmarks when player takes a close turn.
