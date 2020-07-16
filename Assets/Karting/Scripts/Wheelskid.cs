@@ -5,44 +5,45 @@ using UnityEngine;
 
 public class Wheelskid : MonoBehaviour {
 
-    [SerializeField] float intensityModifier = 1.5f;
-    [SerializeField] float intensityThreshold = 0.1f;
+    //How hard the player has to turn in order for the skidmarks to be shown in the floor
+    [SerializeField] float IntensityModifier = 1.5f;
+    [SerializeField] float IntensityThreshold = 0.1f;
 
-    Skidmarks skidMarkController;
-    ArcadeKart playerCar;
-    ParticleSystem particleSystem;
+    Skidmarks SkidMarkController;
+    ArcadeKart Car;
+    ParticleSystem VFX;
 
+    //Last index of which skidmark is refering to
     int lastSkidId = -1;
 
 	void Start () {
-        skidMarkController = FindObjectOfType<Skidmarks>();
-        playerCar = GetComponentInParent<ArcadeKart>();
-        particleSystem = GetComponent<ParticleSystem>();
+        SkidMarkController = FindObjectOfType<Skidmarks>();
+        Car = GetComponentInParent<ArcadeKart>();
+        VFX = GetComponent<ParticleSystem>();
 	}
 	
-	// Update is called once per frame
 	void LateUpdate () {
 
-        float intensity = playerCar.SideSlipAmount;
+        float intensity = Car.SideSlipAmount;
         if(intensity < 0)
         {
             intensity = -intensity;
         }
 
-        if(intensity > intensityThreshold)
+        if(intensity > IntensityThreshold)
         {
-            lastSkidId = skidMarkController.AddSkidMark(transform.position, transform.up, intensity * intensityModifier, lastSkidId);
-            if(particleSystem != null && !particleSystem.isPlaying)
+            lastSkidId = SkidMarkController.AddSkidMark(transform.position, transform.up, intensity * IntensityModifier, lastSkidId);
+            if(VFX != null && !VFX.isPlaying)
             {
-                particleSystem.Play();
+                VFX.Play();
             }
         }
         else
         {
             lastSkidId = -1;
-            if (particleSystem != null && particleSystem.isPlaying)
+            if (VFX != null && VFX.isPlaying)
             {
-                particleSystem.Stop();
+                VFX.Stop();
             }
         }
 	}
