@@ -4,148 +4,153 @@ using UnityEngine;
 
 public class CustomizationManager : MonoBehaviour
 {
+    //Resources to change the player
     [Header("Hats")]
-    public GameObject[] hatsPrefabs;
-
+    public GameObject[] HatsPrefabs;
 
     [Header("Wheels")]
-    public GameObject[] wheelsPrefabs;
-    private bool isNormalWheels;
-
-
+    public GameObject[] WheelsPrefabs;
+    private bool IsNormalWheels;
+    
     [Header("Player")]
     [Header("Colors")]
-    public Material playerMat;
-    public Color[] playerColorsOptions;
+    public Material PlayerMaterial;
+    public Color[] PlayerColorsOptions;
     [Header("Car")]
-    public Material carMat;
-    public Color[] carColorsOptions;
+    public Material CarMaterial;
+    public Color[] CarColorsOptions;
     [Header("WheelsColor")]
-    public Material wheelsMat;
-    public Color[] wheelsColorsOptions;
+    public Material WheelsMaterial;
+    public Color[] WheelsColorsOptions;
 
 
-    //Number of index in the array of each mod
+    //Number of index in the array of each modification
     [HideInInspector]
-    public int indexHat;
+    public int CurrentIndexHat;
     [HideInInspector]
-    public int indexPlayer;
+    public int CurrentIndexPlayer;
     [HideInInspector]
-    public int indexCar;
+    public int CurrentIndexCar;
     [HideInInspector]
-    public int indexWheels;
+    public int CurrentIndexWheels;
 
     private void OnEnable()
     {
-        //Set lobby car modifications to the preferences of the user
+        //Set lobby car modifications to the preferences of the user already saved
 
         if (PlayerPrefs.HasKey("indexHat"))
         {
-            hatsPrefabs[PlayerPrefs.GetInt("indexHat") - 1].SetActive(true);
-            indexHat = PlayerPrefs.GetInt("indexHat");
+            HatsPrefabs[PlayerPrefs.GetInt("indexHat") - 1].SetActive(true);
+            CurrentIndexHat = PlayerPrefs.GetInt("indexHat");
         }
 
-        playerMat.color = playerColorsOptions[PlayerPrefs.GetInt("indexPlayer")];
-        indexPlayer = PlayerPrefs.GetInt("indexPlayer")+1;
+        PlayerMaterial.color = PlayerColorsOptions[PlayerPrefs.GetInt("indexPlayer")];
+        CurrentIndexPlayer = PlayerPrefs.GetInt("indexPlayer")+1;
 
-        carMat.color = carColorsOptions[PlayerPrefs.GetInt("indexCar")];
-        indexCar = PlayerPrefs.GetInt("indexCar") + 1;
+        CarMaterial.color = CarColorsOptions[PlayerPrefs.GetInt("indexCar")];
+        CurrentIndexCar = PlayerPrefs.GetInt("indexCar") + 1;
 
-        wheelsMat.color = wheelsColorsOptions[PlayerPrefs.GetInt("indexWheels")];
-        indexWheels = PlayerPrefs.GetInt("indexWheels") + 1;
+        WheelsMaterial.color = WheelsColorsOptions[PlayerPrefs.GetInt("indexWheels")];
+        CurrentIndexWheels = PlayerPrefs.GetInt("indexWheels") + 1;
 
         if(PlayerPrefs.GetInt("changeWheels") == 0)
         {
-            wheelsPrefabs[0].SetActive(true);
-            wheelsPrefabs[1].SetActive(false);
-            isNormalWheels = true;
+            WheelsPrefabs[0].SetActive(true);
+            WheelsPrefabs[1].SetActive(false);
+            IsNormalWheels = true;
         }
         else
         {
-            wheelsPrefabs[0].SetActive(false);
-            wheelsPrefabs[1].SetActive(true);
-            isNormalWheels = false;
+            WheelsPrefabs[0].SetActive(false);
+            WheelsPrefabs[1].SetActive(true);
+            IsNormalWheels = false;
         }
     }
 
+
+    //Change hat by UI button
     public void ChangeHat()
     {
-        foreach (var item in hatsPrefabs)
+        foreach (var item in HatsPrefabs)
         {
             item.SetActive(false);
         }
 
-        indexHat++;
+        CurrentIndexHat++;
 
-        if (indexHat == 0)
+        if (CurrentIndexHat == 0)
             return;
 
-        hatsPrefabs[indexHat - 1].SetActive(true);
+        HatsPrefabs[CurrentIndexHat - 1].SetActive(true);
 
-        if(indexHat == hatsPrefabs.Length)
-            indexHat = -1;
+        if(CurrentIndexHat == HatsPrefabs.Length)
+            CurrentIndexHat = -1;
 
-        if(indexHat == -1)
+        if(CurrentIndexHat == -1)
         {
             PlayerPrefs.DeleteKey("indexHat");
         }
         else
         {
-            PlayerPrefs.SetInt("indexHat", indexHat);
+            PlayerPrefs.SetInt("indexHat", CurrentIndexHat);
         }
         
     }
 
+    //Change player color by UI button
     public void ChangePlayerColor()
     {
-        if (indexPlayer > playerColorsOptions.Length - 1)
-            indexPlayer = 0;
+        if (CurrentIndexPlayer > PlayerColorsOptions.Length - 1)
+            CurrentIndexPlayer = 0;
 
-        playerMat.color = playerColorsOptions[indexPlayer];
+        PlayerMaterial.color = PlayerColorsOptions[CurrentIndexPlayer];
 
-        PlayerPrefs.SetInt("indexPlayer", indexPlayer);
+        PlayerPrefs.SetInt("indexPlayer", CurrentIndexPlayer);
 
-        indexPlayer++;
+        CurrentIndexPlayer++;
     }
 
+    //Change car color by UI button
     public void ChangeCarColor()
     {
-        if (indexCar > carColorsOptions.Length - 1)
-            indexCar = 0;
+        if (CurrentIndexCar > CarColorsOptions.Length - 1)
+            CurrentIndexCar = 0;
 
-        carMat.color = carColorsOptions[indexCar];
+        CarMaterial.color = CarColorsOptions[CurrentIndexCar];
         
-        PlayerPrefs.SetInt("indexCar", indexCar);
+        PlayerPrefs.SetInt("indexCar", CurrentIndexCar);
 
-        indexCar++;
+        CurrentIndexCar++;
     }
 
+    //Change wheels color by UI button
     public void ChangeWheelsColor()
     {
-        if (indexWheels > wheelsColorsOptions.Length - 1)
-            indexWheels = 0;
+        if (CurrentIndexWheels > WheelsColorsOptions.Length - 1)
+            CurrentIndexWheels = 0;
 
-        wheelsMat.color = wheelsColorsOptions[indexWheels];
+        WheelsMaterial.color = WheelsColorsOptions[CurrentIndexWheels];
         
-        PlayerPrefs.SetInt("indexWheels", indexWheels);
+        PlayerPrefs.SetInt("indexWheels", CurrentIndexWheels);
 
-        indexWheels++;
+        CurrentIndexWheels++;
     }
 
+    //Change wheels 3d model by UI button
     public void ChangeWheels()
     {
-        isNormalWheels = !isNormalWheels;
+        IsNormalWheels = !IsNormalWheels;
 
-        if (isNormalWheels)
+        if (IsNormalWheels)
         {
-            wheelsPrefabs[0].SetActive(true);
-            wheelsPrefabs[1].SetActive(false);
+            WheelsPrefabs[0].SetActive(true);
+            WheelsPrefabs[1].SetActive(false);
             PlayerPrefs.SetInt("changeWheels", 0);
         }
         else
         {
-            wheelsPrefabs[0].SetActive(false);
-            wheelsPrefabs[1].SetActive(true);
+            WheelsPrefabs[0].SetActive(false);
+            WheelsPrefabs[1].SetActive(true);
             PlayerPrefs.SetInt("changeWheels", 1);
         }        
     }
